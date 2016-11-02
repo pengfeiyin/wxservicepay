@@ -7,7 +7,7 @@
         "name": "Mao tao",
         "email": "mzt.live@live.com"
     }],
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0.0",
     "require-dev": {
         "phpunit/phpunit": "5.5.*"
     },
