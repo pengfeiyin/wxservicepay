@@ -8,6 +8,6 @@
         "email": "mzt.live@live.com"
     }],
     "require": {
-        "mztli/wechat-service-providers-pay": "*@dev"
+        "mztli/wspp": "*"
     }
 }
