@@ -30,6 +30,16 @@ class UnifiedOrderStruct extends BStruct  implements IStruct
     /*支付者OpenId，如果有SubAppId，这个必须有值*/
     protected $sub_openid;
 
+    protected $openid;
+
+    /**
+     * @param mixed $openid
+     */
+    public function setOpenid($openid)
+    {
+        $this->openid = $openid;
+    }
+
     public function SetSubappid($sub_appid){
         $this->sub_appid = $sub_appid;
     }
@@ -59,9 +69,17 @@ class UnifiedOrderStruct extends BStruct  implements IStruct
     }
 
     public function GetParams(){
+        /*如果填写了openid ，就让sub_openid,sub_appid作废*/
+        if(isset($this->openid)){
+            $this->sub_appid = '';
+            $this->sub_openid = '';
+        }
 
-        if(isset($this->sub_appid) && empty($this->sub_openid))
+        if(!empty($this->sub_appid) && empty($this->sub_openid))
             throw new InvalidArgumentException('如果填写了SubAppId，就必须填写SubOpenId');
+
+        if(!empty($this->sub_openid) && empty($this->sub_appid))
+            throw new InvalidArgumentException('如果填写了SubOpenId，就必须填写SubAppId');
 
         $Options = [
             'appid'=>WxConfig::GetInstance()->getAppId(),
