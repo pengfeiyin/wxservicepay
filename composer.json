@@ -1,0 +1,22 @@
+{
+    "name": "mztli/WechatServiceProvidersPay",
+    "description": "Wechat Service Providers Pay",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Mao tao",
+        "email": "mzt.live@live.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "rmccue/requests": ">=1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Service\\": "src/"
+        }
+    }
+}
