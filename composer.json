@@ -8,9 +8,6 @@
         "email": "mzt.live@live.com"
     }],
     "minimum-stability": "dev",
-    "require": {
-        "rmccue/requests": ">=1.0"
-    },
     "require-dev": {
         "phpunit/phpunit": "5.5.*"
     },

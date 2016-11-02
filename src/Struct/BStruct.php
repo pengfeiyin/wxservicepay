@@ -7,7 +7,7 @@
  */
 
 namespace Service\Struct;
-use Doctrine\Instantiator\Exception\InvalidArgumentException;
+use InvalidArgumentException;
 
 class BStruct
 {

@@ -15,7 +15,6 @@ class QueryOrderStruct extends BStruct  implements IStruct
     protected $sub_mch_id;
     protected $transaction_id;
     protected $out_trade_no;
-    protected $nonce_str;
     protected $sub_appid;
 
     /**
@@ -42,13 +41,6 @@ class QueryOrderStruct extends BStruct  implements IStruct
         $this->out_trade_no = $out_trade_no;
     }
 
-    /**
-     * @param mixed $nonce_str
-     */
-    public function setNonceStr($nonce_str)
-    {
-        $this->nonce_str = $nonce_str;
-    }
 
 
 

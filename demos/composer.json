@@ -1,0 +1,13 @@
+{
+    "name": "mztli/demos",
+    "description": "Wechat Service Providers Pay demos",
+    "type": "project",
+    "license": "MIT",
+    "authors": [{
+        "name": "Mao tao",
+        "email": "mzt.live@live.com"
+    }],
+    "require": {
+        "mztli/wechat-service-providers-pay": "@dev"
+    }
+}
