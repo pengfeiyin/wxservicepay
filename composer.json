@@ -1,5 +1,5 @@
 {
-    "name": "mztli/wechat-service-providers-pay",
+    "name": "mztli/wspp",
     "description": "Wechat Service Providers Pay",
     "type": "library",
     "license": "MIT",
