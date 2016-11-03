@@ -8,6 +8,6 @@
         "email": "mzt.live@live.com"
     }],
     "require": {
-        "mztli/wspp": "1.0.0"
+        "mztli/wspp": "^1.0"
     }
 }
